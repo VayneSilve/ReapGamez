@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Game Collection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", "Trebuchet MS", sans-serif;
+      background: linear-gradient(to bottom, #87ceeb, #fefefe);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #ffcc00;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #333;
+      text-shadow: 2px 2px white;
+    }
+
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .game-card {
+      background: #fff;
+      border: 5px solid #ffcc00;
+      border-radius: 15px;
+      padding: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .game-thumb {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .game-title {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .play-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .play-btn:hover {
+      background: #45a049;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎮 Welcome to Reap Gamez 🎮</h1>
+  </header>
+
+  <main>
+    <div class="game-grid">
+
+      <!-- Game 1 -->
+      <div class="game-card">
+        <img class="game-thumb" src="game1/thumb.jpg" alt="Game 1 Thumbnail">
+        <div class="game-title">Table DND</div>
+        <a class="play-btn" href="game1/index.html">Play</a>
+      </div>
+
+      <!-- Game 2 -->
+      <div class="game-card">
+        <img class="game-thumb" src="game2/thumb.jpg" alt="Game 2 Thumbnail">
+        <div class="game-title">Ratman</div>
+        <a class="play-btn" href="game2/index.html">Play</a>
+      </div>
+
+      <!-- Game 3 -->
+      <div class="game-card">
+        <img class="game-thumb" src="game3/thumb.jpg" alt="Game 3 Thumbnail">
+        <div class="game-title">Moncatch</div>
+        <a class="play-btn" href="game3/index.html">Play</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 My Game Collection</p>
+  </footer>
+</body>
+</html>
